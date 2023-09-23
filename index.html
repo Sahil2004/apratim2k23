@@ -13,5 +13,48 @@
 		<button class="secondary">
 			<span> Sign up </span>
 		</button>
+		<form action="/api/submit" method="POST">
+			<span class="container">
+				<input
+					type="text"
+					name="name"
+					id="name"
+					autofocus
+					tabindex="1"
+					required
+					placeholder=" "
+				/>
+				<label for="name"> Your name </label>
+			</span>
+			<span class="container">
+				<input
+					type="email"
+					name="email"
+					id="email"
+					tabindex="2"
+					required
+					placeholder=" "
+				/>
+				<label for="email">Your Email</label>
+			</span>
+			<span class="container">
+				<input
+					type="number"
+					name="phone"
+					id="phone"
+					tabindex="3"
+					required
+					placeholder=" "
+				/>
+				<label for="phone">Your Phone number</label>
+			</span>
+			<textarea
+				name="message"
+				id="message"
+				placeholder="Your Message"
+				tabindex="4"
+			></textarea>
+			<input type="submit" value="Submit" tabindex="5" />
+		</form>
 	</body>
 </html>

@@ -26,8 +26,11 @@ a {
 	--secondary: #ffd074;
 	--tertiary: #17f1d1;
 
+	--danger-900: red;
+
 	--black-900: #1d1d1f;
 
+	--white-500: #b1b1b1;
 	--white-100: #fff;
 }
 
@@ -88,6 +91,97 @@ button.secondary > span {
 
 button.secondary:focus > span {
 	animation: textUp 0.5s forwards linear;
+}
+
+input[type="submit"] {
+	position: relative;
+	background-color: var(--secondary);
+	border: 0;
+	margin-block-start: 2px;
+	margin-inline-start: 2px;
+	color: var(--black-900);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	border-radius: 50px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	transform: scaleX(1.1);
+	transition: 0.2s all ease;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+	position: relative;
+	display: block;
+	background-color: transparent;
+	border: 0;
+	border-block-end: 1px solid var(--primary);
+	inline-size: inherit;
+	block-size: 100%;
+	color: var(--white-100);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	outline: none;
+}
+
+/*
+ * Get rid of the marker in the number input
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 5vh;
+	padding: 40px;
+}
+
+form > span.container {
+	position: relative;
+	inline-size: 100%;
+	block-size: 100%;
+}
+
+label {
+	position: absolute;
+	width: max-content;
+	height: max-content;
+	inset-block-end: calc(1vh + 5px);
+	inset-inline-start: calc(1vw + 12px);
+	color: var(--white-500);
+	transition: 0.5s all ease;
+	pointer-events: none;
+}
+
+input:invalid:not(:placeholder-shown) + label,
+input:valid + label,
+input:focus + label {
+	color: var(--white-100);
+	inset-block-end: 100%;
+}
+
+input:invalid:not(:placeholder-shown) {
+	border-block-end: 1px solid var(--danger-900);
+}
+
+textarea {
+	display: block;
+	background-color: transparent;
+	border: 1px solid var(--primary);
+	border-radius: 20px;
+	resize: none;
+	inline-size: 100%;
+	block-size: 100%;
+	color: var(--white-100);
 }
 
 @keyframes textUp {
