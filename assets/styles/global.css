@@ -6,12 +6,14 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	line-height: 1.5;
+	font-size: 1rem;
 }
 
 html,
 body {
-	color: #fff;
-	background-color: var(--primary-bg);
+	color: var(--white-100);
+	background-color: var(--black-900);
 }
 
 a {
@@ -20,8 +22,170 @@ a {
 
 :root {
 	/* All the variables go here */
-	--primary: red;
-	--secondary: blue;
+	--primary: #a374ff;
+	--secondary: #ffd074;
+	--tertiary: #17f1d1;
 
-	--primary-bg: black;
+	--danger-900: red;
+
+	--black-900: #1d1d1f;
+
+	--white-500: #b1b1b1;
+	--white-100: #fff;
+}
+
+button.primary {
+	position: relative;
+	background-color: transparent;
+	border: 2px solid var(--primary);
+	margin-block-start: 2px;
+	margin-inline-start: 2px;
+	color: var(--white-100);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	border-radius: 50px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+button.primary:hover {
+	scale: 1.05;
+	transition: 0.2s all ease;
+}
+
+button.primary > span {
+	position: relative;
+	z-index: 3;
+}
+
+button.primary:focus > span {
+	animation: textUp 0.5s forwards linear;
+}
+
+button.secondary {
+	position: relative;
+	background-color: var(--secondary);
+	border: 0;
+	margin-block-start: 2px;
+	margin-inline-start: 2px;
+	color: var(--black-900);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	border-radius: 50px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+button.secondary:hover {
+	transform: scaleX(1.1);
+	transition: 0.2s all ease;
+}
+
+button.secondary > span {
+	position: relative;
+	z-index: 3;
+}
+
+button.secondary:focus > span {
+	animation: textUp 0.5s forwards linear;
+}
+
+input[type="submit"] {
+	position: relative;
+	background-color: var(--secondary);
+	border: 0;
+	margin-block-start: 2px;
+	margin-inline-start: 2px;
+	color: var(--black-900);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	border-radius: 50px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	transform: scaleX(1.1);
+	transition: 0.2s all ease;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+	position: relative;
+	display: block;
+	background-color: transparent;
+	border: 0;
+	border-block-end: 1px solid var(--primary);
+	inline-size: inherit;
+	block-size: 100%;
+	color: var(--white-100);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	outline: none;
+}
+
+/*
+ * Get rid of the marker in the number input
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+form > span.container {
+	position: relative;
+	inline-size: 100%;
+	block-size: 100%;
+}
+
+label {
+	position: absolute;
+	width: max-content;
+	height: max-content;
+	inset-block-end: calc(1vh + 5px);
+	inset-inline-start: calc(1vw + 12px);
+	color: var(--white-500);
+	transition: 0.5s all ease;
+	pointer-events: none;
+}
+
+input:invalid:not(:placeholder-shown) + label,
+input:valid + label,
+input:focus + label {
+	color: var(--white-100);
+	inset-block-end: 100%;
+}
+
+input:invalid:not(:placeholder-shown) {
+	border-block-end: 1px solid var(--danger-900);
+}
+
+textarea {
+	display: block;
+	background-color: transparent;
+	border: 1px solid var(--primary);
+	border-radius: 20px;
+	resize: none;
+	inline-size: 100%;
+	block-size: 100%;
+	color: var(--white-100);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	outline: none;
+}
+
+textarea::placeholder {
+	color: var(--white-100);
+}
+
+@keyframes textUp {
+	0% {
+		inset-block-start: 0px;
+	}
+	50% {
+		inset-block-start: 5px;
+	}
+	100% {
+		inset-block-start: 0;
+	}
 }
