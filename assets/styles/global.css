@@ -10,16 +10,6 @@
 	font-size: 1rem;
 }
 
-html,
-body {
-	color: var(--white-100);
-	background-color: var(--black-900);
-}
-
-a {
-	text-decoration: transparent;
-}
-
 :root {
 	/* All the variables go here */
 	--primary: #a374ff;
@@ -32,6 +22,32 @@ a {
 
 	--white-500: #b1b1b1;
 	--white-100: #fff;
+}
+
+html,
+body {
+	color: var(--white-100);
+	background-color: var(--black-900);
+}
+
+a {
+	text-decoration: transparent;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: 1rem;
 }
 
 button.primary {
