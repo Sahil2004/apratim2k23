@@ -20,8 +20,9 @@ a {
 
 :root {
 	/* All the variables go here */
-	--primary: red;
-	--secondary: blue;
+	--primary: #a374ff;
+	--secondary: #ffd074;
+	--tertiary: #17f1d1;
 
-	--primary-bg: black;
+	--black-900: #1d1d1f;
 }
