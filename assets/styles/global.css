@@ -138,13 +138,6 @@ input[type="number"] {
 	-moz-appearance: textfield;
 }
 
-form {
-	display: flex;
-	flex-direction: column;
-	gap: 5vh;
-	padding: 40px;
-}
-
 form > span.container {
 	position: relative;
 	inline-size: 100%;
@@ -181,6 +174,12 @@ textarea {
 	resize: none;
 	inline-size: 100%;
 	block-size: 100%;
+	color: var(--white-100);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	outline: none;
+}
+
+textarea::placeholder {
 	color: var(--white-100);
 }
 
