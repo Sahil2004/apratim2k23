@@ -34,11 +34,6 @@ a {
 	--white-100: #fff;
 }
 
-/*
- * Button component
- * variants: primary, secondary
-*/
-
 button.primary {
 	position: relative;
 	background-color: transparent;
