@@ -1,0 +1,27 @@
+/*
+ * This style sheet needs to be included on every page.
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	color: #fff;
+	background-color: var(--primary-bg);
+}
+
+a {
+	text-decoration: transparent;
+}
+
+:root {
+	/* All the variables go here */
+	--primary: red;
+	--secondary: blue;
+
+	--primary-bg: black;
+}
