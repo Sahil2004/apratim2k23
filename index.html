@@ -1,10 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Apratim</title>
-		<link rel="stylesheet" href="/assets/styles/global.css" />
-	</head>
-	<body></body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script src="footer.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <title>Apratim</title>
+    <link rel="stylesheet" href="/assets/styles/global.css" />
+  </head>
+  <body>
+    <div
+      class="footer footer-radius-section"
+      bind:this="{footer}"
+      data-previous-scroll-pos="0"
+    >
+      <span bind:this="{fbr}"></span>
+      <div class="footer-content parallax">
+        <div class="maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.687519256584!2d76.80650046560172!3d30.727183942950116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed212e27c319%3A0x491b3277baba3581!2sChandigarh%20College%20Of%20Engineering%20and%20Technology%20Degree%20Wing!5e0!3m2!1sen!2sin!4v1677411314991!5m2!1sen!2sin"
+            style="border: 0"
+            title="Chandigarh College Of Engineering and Technology"
+            loading="lazy"
+            height="300"
+            width="400"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="footer-contactInfo">
+          <div class="footer-heading">GET IN TOUCH</div>
+          <div class="digitalAddress">
+            <a href="mailto:apratim@ccet.ac.in" class="email">
+              apratim@ccet.ac.in,
+            </a>
+
+            <a href="tel: +917970875920" class="mobile">7970875920,</a>
+
+            <a
+              href="https://goo.gl/maps/aJZ2mFZA1Q5yHfWo7"
+              class="offlineAddress"
+              ><div class="address">
+                <p>
+                  Chandigarh&nbsp;College&nbsp;of&nbsp;Engineering&nbsp;and&nbsp;Technology,
+                </p>
+                <p>Sector&nbsp;26,Chandigarh</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="underFooter">
+        <div class="links">
+          <a href="/privacy" class="footer_priv">Privacy Policy</a>
+          <a href="/tnc" class="footer_tnc">Terms and Conditions</a>
+          <a href="/sponsors" class="footer_sponsor">Our sponsors</a>
+        </div>
+        <div class="socials">
+          <div class="footer-heading footer_heading">See what we're up to</div>
+          <div class="footer-social">
+            <div class="social-link">
+              <a href="https://www.instagram.com/ccetapratim/">
+                <ion-icon class="icon" name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+            <div class="social-link">
+              <a
+                href="https://www.linkedin.com/school/chandigarh-college-of-engineering-technology-degree-wing-panjab-university/?originalSubdomain=in"
+              >
+                <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+              </a>
+            </div>
+            <div class="social-link">
+              <a href="https://www.youtube.com/@ccetapratim3386">
+                <ion-icon name="logo-youtube" class="icon"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
