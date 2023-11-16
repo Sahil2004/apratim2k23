@@ -1,0 +1,26 @@
+.video {
+	position: absolute;
+	top: -15vh;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	& > .gang {
+		width: 50%;
+		height: 65%;
+		border-radius: 50px;
+		object-fit: fill;
+		animation: 0.5s gang ease-out;
+	}
+}
+
+@keyframes gang {
+	0% {
+		scale: 0;
+	}
+	100% {
+		scale: 1;
+	}
+}
