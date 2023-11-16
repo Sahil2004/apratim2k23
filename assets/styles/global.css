@@ -194,6 +194,35 @@ textarea::placeholder {
 	color: var(--white-100);
 }
 
+.blob-container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.blob {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	background-color: white;
+	height: 34vmax;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: linear-gradient(to right, aquamarine, mediumpurple);
+	animation: rotate 20s infinite;
+	opacity: 0.8;
+}
+
+.blur {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	backdrop-filter: blur(12vmax);
+}
+
 @keyframes textUp {
 	0% {
 		inset-block-start: 0px;
@@ -203,5 +232,17 @@ textarea::placeholder {
 	}
 	100% {
 		inset-block-start: 0;
+	}
+}
+
+@keyframes rotate {
+	from {
+		rotate: 0deg;
+	}
+	50% {
+		scale: 1 1.5;
+	}
+	to {
+		rotate: 360deg;
 	}
 }
