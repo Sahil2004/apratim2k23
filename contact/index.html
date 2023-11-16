@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Apratim</title>
+		<link
+			rel="shortcut icon"
+			href="../assets/images/logo/logo.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="../assets/styles/global.css" />
+		<link rel="stylesheet" href="../assets/styles/header.css" />
+		<link rel="stylesheet" href="../assets/styles/contact.css" />
+	</head>
+	<body>
+		<!-- Blob starts here -->
+		<article class="blob-container">
+			<div class="blob"></div>
+			<div class="blur"></div>
+		</article>
+		<!-- Blob ends here -->
+		<!-- Header starts here -->
+		<header>
+			<a href="/" class="logo">
+				<img src="../assets/images/logo/logo.png" alt="Apratim Logo" />
+			</a>
+			<div class="hamburger" onclick="toggleNavBar()">
+				<div>
+					<span class="transition1"></span>
+					<span class="transition2"></span>
+					<span class="transition3"></span>
+				</div>
+			</div>
+			<div class="overlay header-overlay" style="display: none">
+				<div class="contactInfo">
+					<div class="heading">GET IN TOUCH</div>
+					<div class="digitalAddress">
+						<a href="mailto:apratim@ccet.ac.in" class="email">
+							apratim@ccet.ac.in
+						</a>
+						<a href="tel: +917970875920" class="mobile">
+							(+91) 79708-75920
+						</a>
+					</div>
+					<a
+						href="https://goo.gl/maps/aJZ2mFZA1Q5yHfWo7"
+						class="offlineAddress"
+					>
+						Chandigarh College of Engineering and Technology
+						<br />
+						Sector 26
+						<br />
+						Chandigarh
+					</a>
+				</div>
+				<nav class="links">
+					<a href="/">Home</a>
+					<a href="/events">Events</a>
+					<a href="/schedule">Schedule</a>
+					<a href="/clubs">Clubs</a>
+					<a href="/organizers">Organizers</a>
+					<a href="/sponsors">Sponsors</a>
+					<a href="/contact">Contact Us</a>
+				</nav>
+			</div>
+		</header>
+		<!-- Header ends here -->
+		<!-- Contact section starts here -->
+		<main>
+			<div class="heading">
+				<Heading title="Get In Touch" />
+			</div>
+			<div class="faq">
+				<div class="subheading">Frequently Asked Questions:</div>
+				<div class="faqContent">
+					<details>
+						<summary>
+							How to register?
+							<img
+								src="../assets/images/contact/downArrow.svg"
+								alt="Down Arrow"
+							/>
+						</summary>
+						<p>Well... we also don't know, lol!</p>
+					</details>
+					<details>
+						<summary>
+							Address of CCET?
+							<img
+								src="../assets/images/contact/downArrow.svg"
+								alt="Down Arrow"
+							/>
+						</summary>
+						<p>Sector 26, Chandigarh</p>
+					</details>
+				</div>
+			</div>
+			<div class="maps">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.687683331595!2d76.80649510127387!3d30.72717933154892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed212e27c319%3A0x491b3277baba3581!2sChandigarh%20College%20Of%20Engineering%20and%20Technology%20Degree%20Wing!5e0!3m2!1sen!2sin!4v1677586808063!5m2!1sen!2sin"
+					width="800"
+					height="600"
+					style="border: 0"
+					title="Chandigarh College of Engineering and Technology, Sector 26, Chandigarh map."
+					allow="fullscreen"
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+			<div class="contact">
+				<div class="mail">
+					<div class="icon">
+						<img
+							src="../assets/images/contact/mail.svg"
+							alt="Email"
+						/>
+					</div>
+					<a href="mailto:apratim@ccet.ac.in"> apratim@ccet.ac.in </a>
+				</div>
+				<div class="phone">
+					<div class="icon">
+						<img
+							src="../assets/images/contact/phone.svg"
+							alt="Phone"
+						/>
+					</div>
+					<a href="tel:+917970875920"> (+91) 79708-75920 </a>
+				</div>
+			</div>
+		</main>
+		<!-- Contact section ends here -->
+		<!-- scripts starts here -->
+		<script src="../assets/scripts/header.js"></script>
+		<script src="../assets/scripts/blob.js"></script>
+	</body>
+</html>
