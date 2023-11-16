@@ -1,11 +1,9 @@
 main {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	gap: 5vh;
 	margin-bottom: 5vh;
 	padding-inline: 10vw;
-	z-index: 2;
 	& > .faq {
 		display: flex;
 		flex-direction: column;

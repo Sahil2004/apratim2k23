@@ -103,6 +103,12 @@ p {
 	font-size: 1rem;
 }
 
+main {
+	position: relative;
+	display: block;
+	z-index: 2;
+}
+
 button.primary {
 	position: relative;
 	background-color: transparent;
