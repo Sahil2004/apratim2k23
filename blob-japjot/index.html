@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APRATIM BLOB</title>
+    <link rel="stylesheet" href="../blob-japjot/styles.css">
+</head>
+<body>
+    <div id="blob"></div>
+    <div id="blur"></div>
+
+<script > 
+/* -- Glow effect -- */
+
+const blob = document.getElementById("blob");
+
+window.onpointermove = event => { 
+  const { clientX, clientY } = event;
+  
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY}px`
+  }, { duration: 3000, fill: "forwards" });
+}
+
+
+</script>
+    
+</body>
+</html>
