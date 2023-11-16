@@ -1,10 +1,12 @@
-.heading {
-	text-align: center;
-	margin-bottom: 50px;
-	font-weight: 600;
-	color: #fff;
-	& > h1 {
-		font-size: calc(6vmax + 12px);
+main {
+	& > .heading {
+		text-align: center;
+		margin-bottom: 50px;
+		font-weight: 600;
+		color: #fff;
+		& > h1 {
+			font-size: calc(6vmax + 12px);
+		}
 	}
 }
 .timeline {
