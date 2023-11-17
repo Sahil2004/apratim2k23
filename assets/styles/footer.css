@@ -1,0 +1,236 @@
+footer {
+	position: relative;
+	height: 65vh;
+	width: 100vw;
+	background-color: var(--primary);
+	z-index: 1;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	& > span {
+		position: absolute;
+		left: -40vw;
+		height: 30vh;
+		width: 180vw;
+		background-color: var(--primary);
+		z-index: -1;
+	}
+	& > .content {
+		width: inherit;
+		height: 50vh;
+		padding: 10vh 12vw;
+		padding-top: 0;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		& > .maps {
+			user-select: none;
+			display: flex;
+			justify-content: center;
+			& > iframe {
+				width: 35vw;
+				height: 40vh;
+				border-radius: 24px;
+			}
+		}
+		& > .contactInfo {
+			font-family: var(--nav-secondary-font);
+			font-weight: 300;
+			font-size: 2.7rem;
+			width: 30vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			user-select: none;
+			font-weight: 400;
+			& > .heading {
+				margin-bottom: -2vh;
+				opacity: 0;
+				animation: fadeInText 0.4s ease 0.3s forwards;
+				font-weight: 500;
+				font-size: 1.2rem;
+				color: #fff;
+			}
+			& > div {
+				opacity: 0;
+				margin-bottom: -2vh;
+				animation: fadeInText 0.4s ease 0.34s forwards;
+				& > a {
+					text-decoration: none;
+					color: #000;
+					display: block;
+					position: relative;
+					width: fit-content;
+					&::after {
+						content: "";
+						position: absolute;
+						width: 100%;
+						transform: scaleX(0);
+						height: 4px;
+						bottom: 0;
+						left: 0;
+						background-color: #fff;
+						transform-origin: bottom right;
+						transition: transform 0.25s ease-out;
+					}
+					&:hover {
+						&::after {
+							transform: scaleX(1);
+							transform-origin: bottom left;
+						}
+					}
+				}
+			}
+			& > a {
+				margin-bottom: -2vh;
+				opacity: 0;
+				animation: fadeInText 0.4s ease 0.4s forwards;
+				text-decoration: none;
+				color: #000;
+				&:hover {
+					transform: scale(0.99);
+					transition: all 0.2s ease;
+				}
+				& > span {
+					display: block;
+					&.seprators {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	& > .underFooter {
+		margin: 0 10vw;
+		width: 80vw;
+		height: 12vh;
+		padding: 3vh 1.5vw;
+		padding-bottom: 0;
+		border-top: 1px solid #000;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		& > .links {
+			display: flex;
+			gap: 2vw;
+			flex-wrap: wrap;
+			height: fit-content;
+			& > a {
+				color: #000;
+				text-decoration: none;
+				transition: all 0.2s ease;
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+		& > .socials {
+			display: flex;
+			gap: 2vw;
+			align-items: center;
+			height: fit-content;
+			& > .heading {
+				color: #000;
+				height: fit-content;
+			}
+			& > .logos {
+				display: flex;
+				gap: 1vw;
+				& > a {
+					display: flex;
+					align-items: center;
+					text-decoration: none;
+					color: #000;
+					padding: 1vh;
+					border-radius: 50%;
+					transition: all 0.2s ease;
+					&:hover {
+						background-color: rgb(219, 219, 0);
+					}
+					& > img {
+						height: 3vh;
+					}
+				}
+			}
+		}
+	}
+}
+@keyframes fadeInText {
+	from {
+		opacity: 0;
+		margin-bottom: -2vh;
+	}
+	to {
+		opacity: 1;
+		margin-bottom: 0;
+	}
+}
+@media screen and (max-width: 1380px) {
+	.links {
+		gap: 10px !important;
+	}
+}
+@media screen and (max-width: 960px) {
+	.underFooter {
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 1300px) {
+	.contactInfo {
+		font-size: 2.2rem !important;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.footer {
+		height: 60vh !important;
+	}
+	.content {
+		height: 45vh !important;
+	}
+	.contactInfo {
+		font-size: 1.8rem !important;
+	}
+}
+@media screen and (max-width: 650px) {
+	.footer {
+		height: max-content !important;
+	}
+	.offlineAddress {
+		& > span {
+			display: inline !important;
+			&.seprators {
+				display: inline !important;
+			}
+		}
+	}
+	.content {
+		height: fit-content !important;
+		flex-direction: column;
+		align-items: center;
+		width: 80vw;
+		padding: 0 !important;
+		padding-bottom: 2vh !important;
+		gap: 2vh;
+	}
+	.maps {
+		width: 100% !important;
+		& > iframe {
+			width: 80% !important;
+		}
+	}
+	.contactInfo {
+		width: 80% !important;
+		justify-content: center;
+	}
+	.underFooter {
+		height: fit-content !important;
+		padding-bottom: 2vh !important;
+	}
+}
+@media screen and (max-width: 500px) {
+	.socials {
+		flex-direction: column;
+	}
+}
