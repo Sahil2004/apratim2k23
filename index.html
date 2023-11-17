@@ -14,75 +14,88 @@
 		<link rel="stylesheet" href="assets/styles/video.css" />
 	</head>
 	<body>
-		<!-- Blob starts here -->
-		<article class="blob-container">
-			<div class="blob"></div>
-			<div class="blur"></div>
-		</article>
-		<!-- Blob ends here -->
-		<!-- Header starts here -->
-		<header>
-			<a href="/" class="logo">
-				<img src="assets/images/logo/logo.png" alt="Apratim Logo" />
-			</a>
-			<div class="hamburger" onclick="toggleNavBar()">
-				<div>
-					<span class="transition1"></span>
-					<span class="transition2"></span>
-					<span class="transition3"></span>
+		<section class="homepage">
+			<!-- Blob starts here -->
+			<article class="blob-container">
+				<div class="blob"></div>
+				<div class="blur"></div>
+			</article>
+			<!-- Blob ends here -->
+			<!-- Header starts here -->
+			<header>
+				<a href="/" class="logo">
+					<img src="assets/images/logo/logo.png" alt="Apratim Logo" />
+				</a>
+				<div class="hamburger" onclick="toggleNavBar()">
+					<div>
+						<span class="transition1"></span>
+						<span class="transition2"></span>
+						<span class="transition3"></span>
+					</div>
 				</div>
-			</div>
-			<div class="overlay header-overlay" style="display: none">
-				<div class="contactInfo">
-					<div class="heading">GET IN TOUCH</div>
-					<div class="digitalAddress">
-						<a href="mailto:apratim@ccet.ac.in" class="email">
-							apratim@ccet.ac.in
-						</a>
-						<a href="tel: +917970875920" class="mobile">
-							(+91) 79708-75920
+				<div class="overlay header-overlay" style="display: none">
+					<div class="contactInfo">
+						<div class="heading">GET IN TOUCH</div>
+						<div class="digitalAddress">
+							<a href="mailto:apratim@ccet.ac.in" class="email">
+								apratim@ccet.ac.in
+							</a>
+							<a href="tel: +917970875920" class="mobile">
+								(+91) 79708-75920
+							</a>
+						</div>
+						<a
+							href="https://goo.gl/maps/aJZ2mFZA1Q5yHfWo7"
+							class="offlineAddress"
+						>
+							Chandigarh College of Engineering and Technology
+							<br />
+							Sector 26
+							<br />
+							Chandigarh
 						</a>
 					</div>
-					<a
-						href="https://goo.gl/maps/aJZ2mFZA1Q5yHfWo7"
-						class="offlineAddress"
-					>
-						Chandigarh College of Engineering and Technology
-						<br />
-						Sector 26
-						<br />
-						Chandigarh
-					</a>
+					<nav class="links">
+						<a href="/">Home</a>
+						<a href="/events">Events</a>
+						<a href="/schedule">Schedule</a>
+						<a href="/clubs">Clubs</a>
+						<a href="/organizers">Organizers</a>
+						<a href="/sponsors">Sponsors</a>
+						<a href="/contact">Contact Us</a>
+					</nav>
 				</div>
-				<nav class="links">
-					<a href="/">Home</a>
-					<a href="/events">Events</a>
-					<a href="/schedule">Schedule</a>
-					<a href="/clubs">Clubs</a>
-					<a href="/organizers">Organizers</a>
-					<a href="/sponsors">Sponsors</a>
-					<a href="/contact">Contact Us</a>
-				</nav>
-			</div>
-		</header>
-		<!-- Header ends here -->
-		<main>
-			<!-- Banner starts here -->
-			<section class="banner">
-				<!-- Banner video starts here -->
-				<article class="video">
-					<video class="gang" autoplay muted loop>
-						<source
-							src="assets/videos/banner.mp4"
-							type="video/mp4"
-						/>
-					</video>
-				</article>
-				<!-- Banner video ends here -->
-			</section>
-			<!-- Banner ends here -->
-			<!-- scripts starts here -->
-		</main>
+			</header>
+			<!-- Header ends here -->
+			<main>
+				<!-- Banner starts here -->
+				<section class="banner">
+
+					<div class="slide-left">
+						<h2>apratim</h2>
+					</div>
+					<div class="slide-left-1">
+						<h2>add text</h2>
+					</div>
+					<div class="slide-left-2">
+						<h2>add text x2</h2>
+					</div>
+
+					<!-- Banner video starts here -->
+					<article class="video">
+						<video class="gang" autoplay muted loop>
+							<source
+								src="assets/videos/banner.mp4"
+								type="video/mp4"
+							/>
+						</video>
+					</article>
+					<!-- Banner video ends here -->
+				</section>
+				<!-- Banner ends here -->
+				<!-- scripts starts here -->
+			</main>
+		</section>
 		<script src="assets/scripts/header.js"></script>
 		<script src="assets/scripts/blob.js"></script>
 		<script src="assets/scripts/video.js"></script>
