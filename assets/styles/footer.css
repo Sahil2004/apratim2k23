@@ -7,6 +7,7 @@ footer {
 	color: #fff;
 	display: flex;
 	flex-direction: column;
+	margin-top: 25vh;
 	& > span {
 		position: absolute;
 		left: -40vw;
