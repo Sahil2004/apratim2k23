@@ -1,0 +1,6 @@
+a.card {
+	max-width: 400px;
+	& > img {
+		aspect-ratio: 9/11;
+	}
+}

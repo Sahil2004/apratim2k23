@@ -1,0 +1,47 @@
+.card {
+	width: 100%;
+	height: max-content;
+	max-width: calc(100% - 10vw);
+	margin: 0 5vw;
+	padding: 5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	@media (max-width: 650px) {
+		padding-inline: 0;
+	}
+	& > .content {
+		width: 45%;
+		min-height: max-content;
+		display: flex;
+		flex-direction: column;
+		gap: 2vh;
+		@media (max-width: 1000px) {
+			gap: 5px;
+		}
+		& > h2 {
+			font-size: calc(2vmax + 12px);
+			text-align: center;
+		}
+		& > p:last-of-type {
+			text-align: justify;
+			@media (max-width: 1000px) {
+				display: none;
+			}
+		}
+		& > hr {
+			@media (max-width: 1000px) {
+				display: none;
+			}
+		}
+	}
+	& > .poster {
+		width: 45%;
+		& > img {
+			width: 100%;
+			border-radius: 20px;
+		}
+	}
+}
