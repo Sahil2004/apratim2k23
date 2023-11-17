@@ -1,0 +1,16 @@
+main {
+	padding: 5vh 10vw;
+	& > .heading {
+		text-align: center;
+		padding-bottom: 5vh;
+		& > h1 {
+			font-size: calc(3.5vmax + 12px);
+		}
+	}
+	& > .clubs {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 7vh;
+	}
+}
