@@ -1,5 +1,8 @@
 main {
 	padding: 5vh 10vw;
+	@media (max-width: 650px) {
+		padding: 5vh 10px;
+	}
 	& > .heading {
 		text-align: center;
 		padding-bottom: 5vh;
