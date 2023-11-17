@@ -3,138 +3,137 @@
 */
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	line-height: 1.5;
-	font-size: 1rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 :root {
-	/* All the variables go here */
-	--primary: #a374ff;
-	--secondary: #ffd074;
-	--tertiary: #17f1d1;
+  /* All the variables go here */
+  --primary: #a374ff;
+  --secondary: #ffd074;
+  --tertiary: #17f1d1;
 
-	--danger-900: red;
+  --danger-900: red;
 
-	--black-900: #1d1d1f;
+  --black-900: #1d1d1f;
 
-	--white-500: #b1b1b1;
-	--white-100: #fff;
+  --white-500: #b1b1b1;
+  --white-100: #fff;
 }
 
 html,
 body {
-	color: var(--white-100);
-	background-color: var(--black-900);
+  color: var(--white-100);
+  background-color: var(--black-900);
 }
 
 a {
-	text-decoration: transparent;
+  text-decoration: transparent;
 }
 
 h1 {
-	font-size: 3rem;
+  font-size: 3rem;
 }
 
 h2 {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 h3 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 p {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 button.primary {
-	position: relative;
-	background-color: transparent;
-	border: 2px solid var(--primary);
-	margin-block-start: 2px;
-	margin-inline-start: 2px;
-	color: var(--white-100);
-	padding: calc(1vh + 5px) calc(1vw + 12px);
-	border-radius: 50px;
-	font-weight: 600;
-	cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  margin-block-start: 2px;
+  margin-inline-start: 2px;
+  color: var(--white-100);
+  padding: calc(1vh + 5px) calc(1vw + 12px);
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 button.primary:hover {
-	scale: 1.05;
-	transition: 0.2s all ease;
+  scale: 1.05;
+  transition: 0.2s all ease;
 }
 
 button.primary > span {
-	position: relative;
-	z-index: 3;
+  position: relative;
+  z-index: 3;
 }
 
 button.primary:focus > span {
-	animation: textUp 0.5s forwards linear;
+  animation: textUp 0.5s forwards linear;
 }
 
 button.secondary {
-	position: relative;
-	background-color: var(--secondary);
-	border: 0;
-	margin-block-start: 2px;
-	margin-inline-start: 2px;
-	color: var(--black-900);
-	padding: calc(1vh + 5px) calc(1vw + 12px);
-	border-radius: 50px;
-	font-weight: 600;
-	cursor: pointer;
+  position: relative;
+  background-color: var(--secondary);
+  border: 0;
+  margin-block-start: 2px;
+  margin-inline-start: 2px;
+  color: var(--black-900);
+  padding: calc(1vh + 5px) calc(1vw + 12px);
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 button.secondary:hover {
-	transform: scaleX(1.1);
-	transition: 0.2s all ease;
+  transform: scaleX(1.1);
+  transition: 0.2s all ease;
 }
 
 button.secondary > span {
-	position: relative;
-	z-index: 3;
+  position: relative;
+  z-index: 3;
 }
 
 button.secondary:focus > span {
-	animation: textUp 0.5s forwards linear;
+  animation: textUp 0.5s forwards linear;
 }
 
 input[type="submit"] {
-	position: relative;
-	background-color: var(--secondary);
-	border: 0;
-	margin-block-start: 2px;
-	margin-inline-start: 2px;
-	color: var(--black-900);
-	padding: calc(1vh + 5px) calc(1vw + 12px);
-	border-radius: 50px;
-	font-weight: 600;
-	cursor: pointer;
+  position: relative;
+  background-color: var(--secondary);
+  border: 0;
+  margin-block-start: 2px;
+  margin-inline-start: 2px;
+  color: var(--black-900);
+  padding: calc(1vh + 5px) calc(1vw + 12px);
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-	transform: scaleX(1.1);
-	transition: 0.2s all ease;
+  transform: scaleX(1.1);
+  transition: 0.2s all ease;
 }
 
 input[type="text"],
 input[type="number"],
 input[type="email"] {
-	position: relative;
-	display: block;
-	background-color: transparent;
-	border: 0;
-	border-block-end: 1px solid var(--primary);
-	inline-size: inherit;
-	block-size: 100%;
-	color: var(--white-100);
-	padding: calc(1vh + 5px) calc(1vw + 12px);
-	outline: none;
+  position: relative;
+  display: block;
+  background-color: transparent;
+  border: 0;
+  border-block-end: 1px solid var(--primary);
+  inline-size: inherit;
+  block-size: 100%;
+  color: var(--white-100);
+  padding: calc(1vh + 5px) calc(1vw + 12px);
+  outline: none;
 }
 
 /*
@@ -142,66 +141,66 @@ input[type="email"] {
 */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 input[type="number"] {
-	-moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 form > span.container {
-	position: relative;
-	inline-size: 100%;
-	block-size: 100%;
+  position: relative;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 label {
-	position: absolute;
-	width: max-content;
-	height: max-content;
-	inset-block-end: calc(1vh + 5px);
-	inset-inline-start: calc(1vw + 12px);
-	color: var(--white-500);
-	transition: 0.5s all ease;
-	pointer-events: none;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset-block-end: calc(1vh + 5px);
+  inset-inline-start: calc(1vw + 12px);
+  color: var(--white-500);
+  transition: 0.5s all ease;
+  pointer-events: none;
 }
 
 input:invalid:not(:placeholder-shown) + label,
 input:valid + label,
 input:focus + label {
-	color: var(--white-100);
-	inset-block-end: 100%;
+  color: var(--white-100);
+  inset-block-end: 100%;
 }
 
 input:invalid:not(:placeholder-shown) {
-	border-block-end: 1px solid var(--danger-900);
+  border-block-end: 1px solid var(--danger-900);
 }
 
 textarea {
-	display: block;
-	background-color: transparent;
-	border: 1px solid var(--primary);
-	border-radius: 20px;
-	resize: none;
-	inline-size: 100%;
-	block-size: 100%;
-	color: var(--white-100);
-	padding: calc(1vh + 5px) calc(1vw + 12px);
-	outline: none;
+  display: block;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  resize: none;
+  inline-size: 100%;
+  block-size: 100%;
+  color: var(--white-100);
+  padding: calc(1vh + 5px) calc(1vw + 12px);
+  outline: none;
 }
 
 textarea::placeholder {
-	color: var(--white-100);
+  color: var(--white-100);
 }
 
 @keyframes textUp {
-	0% {
-		inset-block-start: 0px;
-	}
-	50% {
-		inset-block-start: 5px;
-	}
-	100% {
-		inset-block-start: 0;
-	}
+  0% {
+    inset-block-start: 0px;
+  }
+  50% {
+    inset-block-start: 5px;
+  }
+  100% {
+    inset-block-start: 0;
+  }
 }
