@@ -2,138 +2,199 @@
  * This style sheet needs to be included on every page.
 */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Passion One font */
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@900&display=swap");
+
+/* Anonymous Pro font */
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap");
+
+/* Inter font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 :root {
-  /* All the variables go here */
-  --primary: #a374ff;
-  --secondary: #ffd074;
-  --tertiary: #17f1d1;
+	--header-font: "Poppins", sans-serif;
+	--body-font: "Poppins", sans-serif;
+	--nav-font: "Passion One", monospace;
+	--nav-secondary-font: "Roboto", monospace;
+	--secondary: #3d3d3d;
+	--secondary-hover: #5d5d5d;
+	--danger-900: red;
+	--black-900: #1d1d1f;
+	--white-500: #b1b1b1;
+	--white-100: #fff;
+	/* color for when the primary color is selected */
+	--secondary-alt: white;
+	--primary: #a374ff;
+	--primary-hover: rgb(255, 109, 134);
+	/* color to contrast secondary on bg */
+	--primary-alt: white;
+	--body-background: white;
+	--header-bg: gray;
+	--header-text: #3d3d3d;
+	--body-text: black;
+	--alternate-color: blue;
+	--highlight: rgb(255, 36, 109);
+	--highlight-hover: rgb(255, 131, 172);
+	--box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+	--backdrop: rgba(100, 100, 100, 0.5);
+	--border: rgb(172, 172, 172);
+	--border-hover: rgb(120, 120, 120);
+	--card-bg: #2a2a2a;
+}
 
-  --danger-900: red;
+:root.dark {
+	--secondary: #3d3d3d;
+	--secondary-hover: #5d5d5d;
+	/* color for when the primary color is selected */
+	--secondary-alt: white;
+	--primary: #a374ff;
+	--primary-hover: rgb(255, 109, 134);
+	/* color to contrast secondary on bg */
+	--primary-alt: white;
+	--body-background: rgb(67, 67, 67);
+	--header-bg: gray;
+	--header-text: rgb(195, 195, 195);
+	--body-text: white;
+	--alternate-color: blue;
+	--highlight: rgb(255, 36, 109);
+	--highlight-hover: rgb(255, 131, 172);
+	--box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+	--backdrop: rgba(100, 100, 100, 0.5);
+	--border: rgb(172, 172, 172);
+	--border-hover: rgb(120, 120, 120);
+}
 
-  --black-900: #1d1d1f;
-
-  --white-500: #b1b1b1;
-  --white-100: #fff;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
 }
 
 html,
 body {
-  color: var(--white-100);
-  background-color: var(--black-900);
+	color: var(--white-100);
+	background-color: var(--black-900);
+	font-family: var(--body-font);
+	overflow-x: hidden;
 }
 
 a {
-  text-decoration: transparent;
+	text-decoration: transparent;
 }
 
 h1 {
-  font-size: 3rem;
+	font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 p {
-  font-size: 1rem;
+	font-size: 1rem;
+}
+
+main {
+	position: relative;
+	display: block;
+	z-index: 2;
 }
 
 button.primary {
-  position: relative;
-  background-color: transparent;
-  border: 2px solid var(--primary);
-  margin-block-start: 2px;
-  margin-inline-start: 2px;
-  color: var(--white-100);
-  padding: calc(1vh + 5px) calc(1vw + 12px);
-  border-radius: 50px;
-  font-weight: 600;
-  cursor: pointer;
+	position: relative;
+	background-color: transparent;
+	border: 2px solid var(--primary);
+	margin-block-start: 2px;
+	margin-inline-start: 2px;
+	color: var(--white-100);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	border-radius: 50px;
+	font-weight: 600;
+	cursor: pointer;
 }
 
 button.primary:hover {
-  scale: 1.05;
-  transition: 0.2s all ease;
+	scale: 1.05;
+	transition: 0.2s all ease;
 }
 
 button.primary > span {
-  position: relative;
-  z-index: 3;
+	position: relative;
+	z-index: 3;
 }
 
 button.primary:focus > span {
-  animation: textUp 0.5s forwards linear;
+	animation: textUp 0.5s forwards linear;
 }
 
 button.secondary {
-  position: relative;
-  background-color: var(--secondary);
-  border: 0;
-  margin-block-start: 2px;
-  margin-inline-start: 2px;
-  color: var(--black-900);
-  padding: calc(1vh + 5px) calc(1vw + 12px);
-  border-radius: 50px;
-  font-weight: 600;
-  cursor: pointer;
+	position: relative;
+	background-color: var(--secondary);
+	border: 0;
+	margin-block-start: 2px;
+	margin-inline-start: 2px;
+	color: var(--black-900);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	border-radius: 50px;
+	font-weight: 600;
+	cursor: pointer;
 }
 
 button.secondary:hover {
-  transform: scaleX(1.1);
-  transition: 0.2s all ease;
+	transform: scaleX(1.1);
+	transition: 0.2s all ease;
 }
 
 button.secondary > span {
-  position: relative;
-  z-index: 3;
+	position: relative;
+	z-index: 3;
 }
 
 button.secondary:focus > span {
-  animation: textUp 0.5s forwards linear;
+	animation: textUp 0.5s forwards linear;
 }
 
 input[type="submit"] {
-  position: relative;
-  background-color: var(--secondary);
-  border: 0;
-  margin-block-start: 2px;
-  margin-inline-start: 2px;
-  color: var(--black-900);
-  padding: calc(1vh + 5px) calc(1vw + 12px);
-  border-radius: 50px;
-  font-weight: 600;
-  cursor: pointer;
+	position: relative;
+	background-color: var(--secondary);
+	border: 0;
+	margin-block-start: 2px;
+	margin-inline-start: 2px;
+	color: var(--black-900);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	border-radius: 50px;
+	font-weight: 600;
+	cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  transform: scaleX(1.1);
-  transition: 0.2s all ease;
+	transform: scaleX(1.1);
+	transition: 0.2s all ease;
 }
 
 input[type="text"],
 input[type="number"],
 input[type="email"] {
-  position: relative;
-  display: block;
-  background-color: transparent;
-  border: 0;
-  border-block-end: 1px solid var(--primary);
-  inline-size: inherit;
-  block-size: 100%;
-  color: var(--white-100);
-  padding: calc(1vh + 5px) calc(1vw + 12px);
-  outline: none;
+	position: relative;
+	display: block;
+	background-color: transparent;
+	border: 0;
+	border-block-end: 1px solid var(--primary);
+	inline-size: inherit;
+	block-size: 100%;
+	color: var(--white-100);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	outline: none;
 }
 
 /*
@@ -141,66 +202,110 @@ input[type="email"] {
 */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 input[type="number"] {
-  -moz-appearance: textfield;
+	-moz-appearance: textfield;
 }
 
 form > span.container {
-  position: relative;
-  inline-size: 100%;
-  block-size: 100%;
+	position: relative;
+	inline-size: 100%;
+	block-size: 100%;
 }
 
 label {
-  position: absolute;
-  width: max-content;
-  height: max-content;
-  inset-block-end: calc(1vh + 5px);
-  inset-inline-start: calc(1vw + 12px);
-  color: var(--white-500);
-  transition: 0.5s all ease;
-  pointer-events: none;
+	position: absolute;
+	width: max-content;
+	height: max-content;
+	inset-block-end: calc(1vh + 5px);
+	inset-inline-start: calc(1vw + 12px);
+	color: var(--white-500);
+	transition: 0.5s all ease;
+	pointer-events: none;
 }
 
 input:invalid:not(:placeholder-shown) + label,
 input:valid + label,
 input:focus + label {
-  color: var(--white-100);
-  inset-block-end: 100%;
+	color: var(--white-100);
+	inset-block-end: 100%;
 }
 
 input:invalid:not(:placeholder-shown) {
-  border-block-end: 1px solid var(--danger-900);
+	border-block-end: 1px solid var(--danger-900);
 }
 
 textarea {
-  display: block;
-  background-color: transparent;
-  border: 1px solid var(--primary);
-  border-radius: 20px;
-  resize: none;
-  inline-size: 100%;
-  block-size: 100%;
-  color: var(--white-100);
-  padding: calc(1vh + 5px) calc(1vw + 12px);
-  outline: none;
+	display: block;
+	background-color: transparent;
+	border: 1px solid var(--primary);
+	border-radius: 20px;
+	resize: none;
+	inline-size: 100%;
+	block-size: 100%;
+	color: var(--white-100);
+	padding: calc(1vh + 5px) calc(1vw + 12px);
+	outline: none;
 }
 
 textarea::placeholder {
-  color: var(--white-100);
+	color: var(--white-100);
+}
+
+.blob-container {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.blob {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	translate: -50% -50%;
+	background-color: white;
+	height: 34vmax;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: linear-gradient(to right, aquamarine, mediumpurple);
+	animation: rotate 20s infinite;
+	opacity: 0.8;
+}
+
+.blur {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+	backdrop-filter: blur(12vmax);
 }
 
 @keyframes textUp {
-  0% {
-    inset-block-start: 0px;
-  }
-  50% {
-    inset-block-start: 5px;
-  }
-  100% {
-    inset-block-start: 0;
-  }
+	0% {
+		inset-block-start: 0px;
+	}
+	50% {
+		inset-block-start: 5px;
+	}
+	100% {
+		inset-block-start: 0;
+	}
+}
+
+@keyframes rotate {
+	from {
+		rotate: 0deg;
+	}
+	50% {
+		scale: 1 1.5;
+	}
+	to {
+		rotate: 360deg;
+	}
 }
