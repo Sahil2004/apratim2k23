@@ -30,7 +30,7 @@ article {
 		gap: 2rem;
 		& > img {
 			border-radius: 50px;
-			width: 100%;
+			max-width: 100%;
 			&:hover {
 				scale: 0.95;
 				transition: all 0.2s ease;
