@@ -1,3 +1,5 @@
+
+/* Clubs page styles here  */
 main {
 	padding: 5vh 10vw;
 	@media (max-width: 650px) {
@@ -17,6 +19,7 @@ main {
 		gap: 7vh;
 	}
 }
+/* card styles here */
 .card {
 	position: relative;
 	width: fit-content;
