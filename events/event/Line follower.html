@@ -1,254 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apratim | Line Follower</title>
-    <link
-      rel="shortcut icon"
-      href="../../assets/images/logo/logo.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../../assets/styles/global.css" />
-    <link rel="stylesheet" href="../../assets/styles/header.css" />
-    <link rel="stylesheet" href="../../assets/styles/card.css" />
-    <link rel="stylesheet" href="../../assets/styles/footer.css" />
-    <link rel="stylesheet" href="../../assets/styles/clubs.css" />
-    <link rel="stylesheet" href="../../assets/styles/event.css" />
-  </head>
-  <body>
-    <!-- Blob starts here -->
-    <article class="blob-container">
-      <div class="blob"></div>
-      <div class="blur"></div>
-    </article>
-    <!-- Blob ends here -->
-    <!-- Header starts here -->
-    <header>
-      <a href="/" class="logo">
-        <img src="../../assets/images/logo/logo.png" alt="Apratim Logo" />
-      </a>
-      <div class="hamburger" onclick="toggleNavBar()">
-        <div>
-          <span class="transition1"></span>
-          <span class="transition2"></span>
-          <span class="transition3"></span>
-        </div>
-      </div>
-      <div class="overlay header-overlay" style="display: none">
-        <div class="contactInfo">
-          <div class="heading">GET IN TOUCH</div>
-          <div class="digitalAddress">
-            <a href="mailto:apratim@ccet.ac.in" class="email">
-              apratim@ccet.ac.in
-            </a>
-            <a href="tel: +917970875920" class="mobile"> (+91) 79708-75920 </a>
-          </div>
-          <a
-            href="https://goo.gl/maps/aJZ2mFZA1Q5yHfWo7"
-            class="offlineAddress"
-          >
-            Chandigarh College of Engineering and Technology
-            <br />
-            Sector 26
-            <br />
-            Chandigarh
-          </a>
-        </div>
-        <nav class="links">
-          <a href="/">Home</a>
-          <a href="/events">Events</a>
-          <a href="/schedule">Schedule</a>
-          <a href="/clubs">Clubs</a>
-          <a href="/organizers">Organizers</a>
-          <a href="/sponsors">Sponsors</a>
-          <a href="/contact">Contact Us</a>
-        </nav>
-      </div>
-    </header>
-    <!-- Header ends here -->
-    <!-- Event section starts here -->
-    <main class="card">
-      <section class="content">
-        <h2>Line Follower</h2>
-        <h4>Date:</h4>
-        <p>22 November 2023</p>
-        <h4>Time:</h4>
-        <p>1pm onwards</p>
-        <h4>Venue:</h4>
-        <p>LH 1</p>
-        <h4>Team Size:</h4>
-        <p>1-4</p>
-        <h3>Contacts:</h3>
-        <p>
-          Someone: <a href="tel: +917696969696">(+91) 76969-69696</a>
-          <br />
-          Someone: <a href="tel: +917696969696">(+91) 76969-69696</a>
-        </p>
-        <hr />
-        <p>
-          1.1. TASK:<br />
-          Teams will need to create an independent robot that can follow a white
-          line while traversing through the trackand maintain its direction.<br />
-          1.2. ARENA:<br />
-          The arena will be about 150cm x 150cm (l x b) in size and will consist
-          of randomly placed white strips. The angle between two consecutive
-          white lines will be either 45° or 90°. A white box measuring 30 cm x
-          30 cm will be at the End Zone to signify the completion of the
-          track.<br />
-          1.3. GAMEPLAY:<br />
-          The game consists of two parts:<br />
-          • The first part is the “Dry Run”. In this run, the bot must start
-          from the 'Start' position and find its way to the ‘End’ (White box) of
-          the arena. The bot must follow an algorithm to reach the 'End'. There
-          are no restrictions on covering all the checkpoints.<br />
-          • The second part is the “Actual Run”. In this run, the bot must start
-          again from the 'Start' and find its way to the ‘End’. The ‘End Zone’
-          will have a white box of 300mm x 300mm (l x b) indicating the end of
-          the path for the bot. The timer will be set to zero as the “Actual
-          Run” begins.<br />
-          • A total of 3 minutes will be provided to complete the Dry Run.<br />
-          • A total of 2 minutes and 45 seconds will be provided to complete the
-          Actual Run.<br />
-          1.4. BOT SPECIFICATIONS:<br />
-          • The autonomous bot must fit into the box of dimensions 25cm x 18cm x
-          18cm (l x b x h).<br />
-          • The bot must have an LED that will light up once it reaches the end
-          zone of the arena.<br />
-          • The bot must have an onboard power supply. The potential difference
-          between any two points must not exceed 24V during the game when using
-          the electric power supply.<br />
-          • The autonomous bot should not separate or split into two or more
-          units. All bots/units that are touching each other or are in the
-          starting point will be considered as one bot.<br />
-          • The autonomous bot cannot be constructed using ready-made 'Lego kits
-          or any ready-made mechanism. They can make use of ready-made gear
-          assemblies. Violating this clause will lead to disqualification of the
-          team.<br />
-          GAME RULES:<br />
-          • Only one autonomous bot per team is allowed.<br />
-          • When the autonomous bot starts, no team member is allowed to touch
-          the bot.<br />
-          • At the start of the task, the bot will be placed at the starting
-          point. Only one team member is allowed to be near the game field while
-          starting the bot.<br />
-          • The run will start only when the organizers give the signal.<br />
-          • The starting procedure of the bot should be simple and should not
-          involve giving the bot any manual force or impulse in any
-          direction.<br />
-          • A total of 5 minutes and 45 seconds will be given. The bot has to
-          finish the Dry Run and the Actual Runin that period only.<br />
-          • Only one member of the team is allowed to handle the bot.<br />
-          • Participants are not allowed to keep anything inside the arena other
-          than the bot.<br />
-          • The time measured by the organizers will be final and will be used
-          for scoring the teams.<br />
-          • Time measured by any contestant by any other means is not acceptable
-          for scoring.<br />
-          • In case of any disputes/discrepancies, the organizers' decision will
-          be final and binding.<br />
-          • The organizers reserve the right to change any or all of the above
-          rules as they deem fit.<br />
-          • The contestant must not alter the bot in any manner that reduces its
-          weight (e.g., removal of a bulky sensor array or switching to lighter
-          batteries to get better speed). The organizers reserve the right to
-          arbitrate in such circumstances.<br />
-          1.5. RESTRICTIONS:<br />
-          • The participants are allowed to take a maximum of 3 restarts in the
-          entire match.<br />
-          • If the bot needs to restart in the first part (Dry Run) of the
-          competition, it must do so from the checkpoint.<br />
-          • Once Dry Run is completed by the bot, the team won't be given any
-          other chance for Dry Run.<br />
-          • If the bot needs to restart in the second part (Actual Run) of the
-          competition, it has to start from the starting zone of the arena. The
-          timer will not be set back to zero and will not be paused in any
-          case.<br />
-          • During a restart, a contestant must not feed information about the
-          arena to the bot.<br />
-          1.6. TEAM SPECIFICATIONS:<br />
-          • A team may consist of 2 members<br />
-        </p>
-      </section>
-      <section class="poster">
-        <img
-          src="../../assets/images/events/Line Follower.jpg"
-          alt="Line Follower"
-        />
-      </section>
-    </main>
-    <!-- Event section ends here -->
-    <!-- Footer starts here -->
-    <footer class="footer" data-previous-scroll-pos="0">
-      <span class="footer-border-radius"></span>
-      <div class="content">
-        <div class="maps">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.687519256584!2d76.80650046560172!3d30.727183942950116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed212e27c319%3A0x491b3277baba3581!2sChandigarh%20College%20Of%20Engineering%20and%20Technology%20Degree%20Wing!5e0!3m2!1sen!2sin!4v1677411314991!5m2!1sen!2sin"
-            style="border: 0"
-            title="Chandigarh College Of Engineering and Technology"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div class="contactInfo">
-          <div class="heading">GET IN TOUCH</div>
-          <div class="digitalAddress">
-            <a href="mailto:apratim@ccet.ac.in" class="email">
-              apratim@ccet.ac.in
-            </a>
-            <a href="tel: +917970875920" class="mobile"> (+91) 79708-75920 </a>
-          </div>
-          <a
-            href="https://goo.gl/maps/aJZ2mFZA1Q5yHfWo7"
-            class="offlineAddress"
-          >
-            <span> Chandigarh College of Engineering and Technology </span>
-            <span class="seprators"> , </span>
-            <span> Sector 26 </span>
-            <span class="seprators"> , </span>
-            <span> Chandigarh </span>
-          </a>
-        </div>
-      </div>
-      <div class="underFooter">
-        <div class="links">
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/tnc">Terms and Conditions</a>
-          <a href="/sponsors">Our sponsors</a>
-        </div>
-        <div class="socials">
-          <div class="heading">See what we're up to</div>
-          <div class="logos">
-            <a href="https://www.instagram.com/ccetapratim/">
-              <img
-                src="../../assets/images/socials/instagram.svg"
-                alt="Instagram"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/school/chandigarh-college-of-engineering-technology-degree-wing-panjab-university/?originalSubdomain=in"
-            >
-              <img
-                src="../../assets/images/socials/linkedin.svg"
-                alt="LinkedIn"
-              />
-            </a>
-            <a href="https://www.youtube.com/@ccetapratim3386">
-              <img
-                src="../../assets/images/socials/youtube.svg"
-                alt="Youtube"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer ends here -->
-    <!-- Scripts starts here -->
-    <script src="../../assets/scripts/header.js"></script>
-    <script src="../../assets/scripts/footer.js"></script>
-    <script src="../../assets/scripts/blob.js"></script>
-    <!-- Scripts end here -->
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Apratim | Line Follower</title>
+		<link
+			rel="shortcut icon"
+			href="../../assets/images/logo/logo.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="../../assets/styles/global.css" />
+		<link rel="stylesheet" href="../../assets/styles/header.css" />
+		<link rel="stylesheet" href="../../assets/styles/card.css" />
+		<link rel="stylesheet" href="../../assets/styles/footer.css" />
+		<link rel="stylesheet" href="../../assets/styles/clubs.css" />
+		<link rel="stylesheet" href="../../assets/styles/event.css" />
+	</head>
+	<body>
+		<!-- Blob starts here -->
+		<article class="blob-container">
+			<div class="blob"></div>
+			<div class="blur"></div>
+		</article>
+		<!-- Blob ends here -->
+		<!-- Header starts here -->
+		<header>
+			<a href="/" class="logo">
+				<img
+					src="../../assets/images/logo/logo.png"
+					alt="Apratim Logo"
+				/>
+			</a>
+			<div class="hamburger" onclick="toggleNavBar()">
+				<div>
+					<span class="transition1"></span>
+					<span class="transition2"></span>
+					<span class="transition3"></span>
+				</div>
+			</div>
+			<div class="overlay header-overlay" style="display: none">
+				<div class="contactInfo">
+					<div class="heading">GET IN TOUCH</div>
+					<div class="digitalAddress">
+						<a href="mailto:apratim@ccet.ac.in" class="email">
+							apratim@ccet.ac.in
+						</a>
+						<a href="tel: +917970875920" class="mobile">
+							(+91) 79708-75920
+						</a>
+					</div>
+					<a
+						href="https://goo.gl/maps/aJZ2mFZA1Q5yHfWo7"
+						class="offlineAddress"
+					>
+						Chandigarh College of Engineering and Technology
+						<br />
+						Sector 26
+						<br />
+						Chandigarh
+					</a>
+				</div>
+				<nav class="links">
+					<a href="/">Home</a>
+					<a href="/events">Events</a>
+					<a href="/schedule">Schedule</a>
+					<a href="/clubs">Clubs</a>
+
+					<a href="/sponsors">Sponsors</a>
+					<a href="/contact">Contact Us</a>
+				</nav>
+			</div>
+		</header>
+		<!-- Header ends here -->
+		<!-- Event section starts here -->
+		<main class="card">
+			<section class="content">
+				<h2>Line Follower</h2>
+				<h4>Date:</h4>
+				<p>22 November 2023</p>
+				<h4>Time:</h4>
+				<p>1pm onwards</p>
+				<h4>Venue:</h4>
+				<p>LH 1</p>
+				<h4>Team Size:</h4>
+				<p>1-4</p>
+				<h3>Contacts:</h3>
+				<p>
+					Someone: <a href="tel: +917696969696">(+91) 76969-69696</a>
+					<br />
+					Someone: <a href="tel: +917696969696">(+91) 76969-69696</a>
+				</p>
+				<hr />
+				<p>
+					1.1. TASK:<br />
+					Teams will need to create an independent robot that can
+					follow a white line while traversing through the trackand
+					maintain its direction.<br />
+					1.2. ARENA:<br />
+					The arena will be about 150cm x 150cm (l x b) in size and
+					will consist of randomly placed white strips. The angle
+					between two consecutive white lines will be either 45° or
+					90°. A white box measuring 30 cm x 30 cm will be at the End
+					Zone to signify the completion of the track.<br />
+					1.3. GAMEPLAY:<br />
+					The game consists of two parts:<br />
+					• The first part is the “Dry Run”. In this run, the bot must
+					start from the 'Start' position and find its way to the
+					‘End’ (White box) of the arena. The bot must follow an
+					algorithm to reach the 'End'. There are no restrictions on
+					covering all the checkpoints.<br />
+					• The second part is the “Actual Run”. In this run, the bot
+					must start again from the 'Start' and find its way to the
+					‘End’. The ‘End Zone’ will have a white box of 300mm x 300mm
+					(l x b) indicating the end of the path for the bot. The
+					timer will be set to zero as the “Actual Run” begins.<br />
+					• A total of 3 minutes will be provided to complete the Dry
+					Run.<br />
+					• A total of 2 minutes and 45 seconds will be provided to
+					complete the Actual Run.<br />
+					1.4. BOT SPECIFICATIONS:<br />
+					• The autonomous bot must fit into the box of dimensions
+					25cm x 18cm x 18cm (l x b x h).<br />
+					• The bot must have an LED that will light up once it
+					reaches the end zone of the arena.<br />
+					• The bot must have an onboard power supply. The potential
+					difference between any two points must not exceed 24V during
+					the game when using the electric power supply.<br />
+					• The autonomous bot should not separate or split into two
+					or more units. All bots/units that are touching each other
+					or are in the starting point will be considered as one
+					bot.<br />
+					• The autonomous bot cannot be constructed using ready-made
+					'Lego kits or any ready-made mechanism. They can make use of
+					ready-made gear assemblies. Violating this clause will lead
+					to disqualification of the team.<br />
+					GAME RULES:<br />
+					• Only one autonomous bot per team is allowed.<br />
+					• When the autonomous bot starts, no team member is allowed
+					to touch the bot.<br />
+					• At the start of the task, the bot will be placed at the
+					starting point. Only one team member is allowed to be near
+					the game field while starting the bot.<br />
+					• The run will start only when the organizers give the
+					signal.<br />
+					• The starting procedure of the bot should be simple and
+					should not involve giving the bot any manual force or
+					impulse in any direction.<br />
+					• A total of 5 minutes and 45 seconds will be given. The bot
+					has to finish the Dry Run and the Actual Runin that period
+					only.<br />
+					• Only one member of the team is allowed to handle the
+					bot.<br />
+					• Participants are not allowed to keep anything inside the
+					arena other than the bot.<br />
+					• The time measured by the organizers will be final and will
+					be used for scoring the teams.<br />
+					• Time measured by any contestant by any other means is not
+					acceptable for scoring.<br />
+					• In case of any disputes/discrepancies, the organizers'
+					decision will be final and binding.<br />
+					• The organizers reserve the right to change any or all of
+					the above rules as they deem fit.<br />
+					• The contestant must not alter the bot in any manner that
+					reduces its weight (e.g., removal of a bulky sensor array or
+					switching to lighter batteries to get better speed). The
+					organizers reserve the right to arbitrate in such
+					circumstances.<br />
+					1.5. RESTRICTIONS:<br />
+					• The participants are allowed to take a maximum of 3
+					restarts in the entire match.<br />
+					• If the bot needs to restart in the first part (Dry Run) of
+					the competition, it must do so from the checkpoint.<br />
+					• Once Dry Run is completed by the bot, the team won't be
+					given any other chance for Dry Run.<br />
+					• If the bot needs to restart in the second part (Actual
+					Run) of the competition, it has to start from the starting
+					zone of the arena. The timer will not be set back to zero
+					and will not be paused in any case.<br />
+					• During a restart, a contestant must not feed information
+					about the arena to the bot.<br />
+					1.6. TEAM SPECIFICATIONS:<br />
+					• A team may consist of 2 members<br />
+				</p>
+			</section>
+			<section class="poster">
+				<img
+					src="../../assets/images/events/Line Follower.jpg"
+					alt="Line Follower"
+				/>
+			</section>
+		</main>
+		<!-- Event section ends here -->
+		<!-- Footer starts here -->
+		<footer class="footer" data-previous-scroll-pos="0">
+			<span class="footer-border-radius"></span>
+			<div class="content">
+				<div class="maps">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.687519256584!2d76.80650046560172!3d30.727183942950116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed212e27c319%3A0x491b3277baba3581!2sChandigarh%20College%20Of%20Engineering%20and%20Technology%20Degree%20Wing!5e0!3m2!1sen!2sin!4v1677411314991!5m2!1sen!2sin"
+						style="border: 0"
+						title="Chandigarh College Of Engineering and Technology"
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+				<div class="contactInfo">
+					<div class="heading">GET IN TOUCH</div>
+					<div class="digitalAddress">
+						<a href="mailto:apratim@ccet.ac.in" class="email">
+							apratim@ccet.ac.in
+						</a>
+						<a href="tel: +917970875920" class="mobile">
+							(+91) 79708-75920
+						</a>
+					</div>
+					<a
+						href="https://goo.gl/maps/aJZ2mFZA1Q5yHfWo7"
+						class="offlineAddress"
+					>
+						<span>
+							Chandigarh College of Engineering and Technology
+						</span>
+						<span class="seprators"> , </span>
+						<span> Sector 26 </span>
+						<span class="seprators"> , </span>
+						<span> Chandigarh </span>
+					</a>
+				</div>
+			</div>
+			<div class="underFooter">
+				<div class="links">
+					<a href="/privacy">Privacy Policy</a>
+					<a href="/tnc">Terms and Conditions</a>
+					<a href="/sponsors">Our sponsors</a>
+				</div>
+				<div class="socials">
+					<div class="heading">See what we're up to</div>
+					<div class="logos">
+						<a href="https://www.instagram.com/ccetapratim/">
+							<img
+								src="../../assets/images/socials/instagram.svg"
+								alt="Instagram"
+							/>
+						</a>
+						<a
+							href="https://www.linkedin.com/school/chandigarh-college-of-engineering-technology-degree-wing-panjab-university/?originalSubdomain=in"
+						>
+							<img
+								src="../../assets/images/socials/linkedin.svg"
+								alt="LinkedIn"
+							/>
+						</a>
+						<a href="https://www.youtube.com/@ccetapratim3386">
+							<img
+								src="../../assets/images/socials/youtube.svg"
+								alt="Youtube"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer ends here -->
+		<!-- Scripts starts here -->
+		<script src="../../assets/scripts/header.js"></script>
+		<script src="../../assets/scripts/footer.js"></script>
+		<script src="../../assets/scripts/blob.js"></script>
+		<!-- Scripts end here -->
+	</body>
 </html>
