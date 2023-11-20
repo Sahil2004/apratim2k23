@@ -16,6 +16,12 @@
 		border-radius: 50px;
 		object-fit: fill;
 		animation: 0.5s gang ease-out;
+		@media screen and (width <= 1000px) {
+			width: 70%;
+		}
+		@media screen and (width <= 700px) {
+			width: 90%;
+		}
 	}
 }
 
@@ -31,109 +37,122 @@
 .slide-left {
 	overflow: hidden;
 	margin: auto;
- }
- 
- .slide-left h2 {
-   width: 100%;
-	position:absolute;
-	z-index:100;
+}
+
+.slide-left h2 {
+	width: 100%;
+	position: absolute;
+	z-index: 100;
 	text-align: center;
 	animation: 3s slide-left;
 	color: white;
 	left: 50%;
-	top: 5%;
+	top: 3%;
 	transform: translate(-50%);
-	overflow: hidden;    
-	font-size: 160px; 
- }
- 
- @keyframes slide-left {
-	 0% {
+	overflow: hidden;
+	font-size: calc(8vmax + 12px);
+	@media screen and (width <= 500px) {
+		top: 10%;
+		font-size: 8vmax;
+	}
+}
+
+@keyframes slide-left {
+	0% {
 		margin-left: 600px;
 		width: 300%;
 		opacity: 0;
-	 }
- 
-	 95% {
+	}
+
+	95% {
 		margin-left: -0.000000000000000001%;
 		width: 100%;
 		scale: 1.05;
-	 }
- 
-	 100%{
-	   margin-left: 0%;
-	 }
-  }
- 
-  /* Text Animation -2 */
- 
-  .slide-left-1 {
+	}
+
+	100% {
+		margin-left: 0%;
+	}
+}
+
+/* Text Animation -2 */
+
+.slide-left-1 {
 	overflow: hidden;
 	margin: auto;
- }
- 
- .slide-left-1 h2 {
-   width: 100%;
-	position:absolute;
-	z-index:100;
+}
+
+.slide-left-1 h2 {
+	width: 100%;
+	position: absolute;
+	z-index: 100;
 	text-align: center;
 	animation: 3.2s slide-left-1;
 	color: white;
 	left: 40%;
-	top: 20%;
+	top: 15%;
 	transform: translate(-50%);
-	overflow: hidden;    
-	font-size: 160px;
- }
- 
- @keyframes slide-left-1 {
-	 0% {
+	overflow: hidden;
+	font-size: calc(8vmax + 12px);
+	@media screen and (width <= 500px) {
+		left: 50%;
+		font-size: 8vmax;
+	}
+}
+
+@keyframes slide-left-1 {
+	0% {
 		margin-left: 600px;
 		width: 300%;
 		opacity: 0;
-	 }
- 
-	 85%{
-	   scale: 1;
-	 }
- 
-	 100% {
+	}
+
+	85% {
+		scale: 1;
+	}
+
+	100% {
 		margin-left: 0%;
 		width: 100%;
 		visibility: visible;
-	 }
-  }
- 
-   /* Text Animation -3 */
- 
-   .slide-left-2 {
-	  overflow: hidden;
-	  margin: auto;
-   }
-   
-   .slide-left-2 h2 {
-	 width: 100%;
-	  position:absolute;
-	  z-index:100;
-	  text-align: center;
-	  animation: 3.1s slide-left-2;
-	  color: white;
-	  left: 50%;
-	  top: 35%;
-	  transform: translate(-50%);
-	  overflow: hidden; 
-	  font-size: 160px;
-   }
-   
-   @keyframes slide-left-2 {
-	 0%{ margin-left: 600px;
-	   width: 300%;
-	   opacity: 0;
-	   scale: 1.05;
 	}
- 
+}
+
+/* Text Animation -3 */
+
+.slide-left-2 {
+	overflow: hidden;
+	margin: auto;
+}
+
+.slide-left-2 h2 {
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+	text-align: center;
+	animation: 3.1s slide-left-2;
+	color: white;
+	left: 50%;
+	top: 25%;
+	transform: translate(-50%);
+	overflow: hidden;
+	font-size: calc(8vmax + 12px);
+	@media screen and (width <= 500px) {
+		top: 20%;
+		font-size: 8vmax;
+	}
+}
+
+@keyframes slide-left-2 {
+	0% {
+		margin-left: 600px;
+		width: 300%;
+		opacity: 0;
+		scale: 1.05;
+	}
+
 	100% {
-	   margin-left: 0%;
-	   width: 100%;
+		margin-left: 0%;
+		width: 100%;
 	}
-	}
+}
