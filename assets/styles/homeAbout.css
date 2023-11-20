@@ -1,0 +1,14 @@
+.about {
+	display: flex;
+	gap: calc(4vmax + 20px);
+	width: 40%;
+	margin: 0 auto 30vh auto;
+	& > h2 {
+		font-size: calc(0.3vmax + 12px);
+		font-weight: 700;
+		color: var(--primary);
+	}
+	& > p {
+		font-size: calc(1vmax + 12px);
+	}
+}
