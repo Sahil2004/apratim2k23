@@ -1,0 +1,12 @@
+.carousel-container{
+    transform: rotateZ(7.86deg);
+}
+
+.card {
+    /* height: 300px;
+    width: 300px; */
+    background-color: red;
+    position: relative;
+	height: 50vh;
+	width: 100%;
+}
