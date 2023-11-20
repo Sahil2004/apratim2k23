@@ -1,12 +1,14 @@
-.carousel-container{
-    transform: rotateZ(7.86deg);
+.carousel-container {
+	position: relative;
+	left: -5%;
+	transform: rotateZ(7.86deg);
+	width: 110%;
 }
 
 .card {
-    /* height: 300px;
-    width: 300px; */
-    background-color: red;
-    position: relative;
+	background-color: red;
+	border-radius: 30px;
+	position: relative;
 	height: 50vh;
 	width: 100%;
 }
