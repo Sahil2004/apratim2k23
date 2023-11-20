@@ -51,6 +51,10 @@
 	transform: translate(-50%);
 	overflow: hidden;
 	font-size: calc(8vmax + 12px);
+	@media screen and (width <= 500px) {
+		top: 10%;
+		font-size: 8vmax;
+	}
 }
 
 @keyframes slide-left {
@@ -90,6 +94,10 @@
 	transform: translate(-50%);
 	overflow: hidden;
 	font-size: calc(8vmax + 12px);
+	@media screen and (width <= 500px) {
+		left: 50%;
+		font-size: 8vmax;
+	}
 }
 
 @keyframes slide-left-1 {
@@ -129,6 +137,10 @@
 	transform: translate(-50%);
 	overflow: hidden;
 	font-size: calc(8vmax + 12px);
+	@media screen and (width <= 500px) {
+		top: 20%;
+		font-size: 8vmax;
+	}
 }
 
 @keyframes slide-left-2 {
