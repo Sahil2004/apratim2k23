@@ -31,7 +31,8 @@ article {
 		gap: 2rem;
 		& > img {
 			border-radius: 50px;
-			max-width: 100%;
+			max-width: 600px;
+			height: fit-content;
 			&:hover {
 				scale: 0.95;
 				transition: all 0.2s ease;
